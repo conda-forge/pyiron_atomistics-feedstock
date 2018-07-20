@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.1.5" %}
-{% set sha256 = "61d7607ae24ff7aed0627d65d9ddbfe0276de79f2faa3b47264f7878d045ef21" %}
+{% set version = "0.1.7" %}
+{% set sha256 = "3bfe6e3b7b367a69dd5e6f1f84a6b39aae7acb2da12ddeb604cf5442060a0beb" %}
 
 package:
   name: {{ name|lower }}
@@ -51,4 +51,3 @@ extra:
     - pyiron-runner
     - jan-janssen
     - sudarsan1989
-
