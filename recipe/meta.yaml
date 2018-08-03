@@ -26,6 +26,7 @@ requirements:
     - pyiron_base
     - ase 
     - spglib
+    - ovito  # [linux]
 
 test:
   imports:
