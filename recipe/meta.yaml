@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "727494f7b880b2b742fe90c658ee497888e5b6a14e7cbe292218e97a6981e743" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "41e07b09d7139222e46edf086bf6165e72f8bccc5eb5161676e28b0a5e07d3e8" %}
 
 package:
   name: {{ name|lower }}
@@ -14,13 +14,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >3.6
     - pip
-    
+
   run:
     - python >3.6
     - ase >=3.20
@@ -59,8 +59,8 @@ about:
   home: https://github.com/pyiron/pyiron_atomistics
   license: BSD-3-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
-  summary: 'Atomistics plugin for pyiron - an integrated development environment (IDE) for computational materials science.'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  summary: Atomistics plugin for pyiron - an integrated development environment (IDE) for computational materials science.
   description: |
     pyiron was initially developed in the Computational Materials Design department of Joerg Neugebauer at the
     Max Planck Insitut für Eisenforschung (Max Planck Insitute for iron research) as a framework for ab initio
