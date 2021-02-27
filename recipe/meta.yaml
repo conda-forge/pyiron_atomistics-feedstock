@@ -46,7 +46,7 @@ requirements:
     - spglib >=1.16.1
     - tamkin >=1.2.6
     - yaff >=1.4.2
-    - pyiron-data >=0.0.9
+    - pyiron-data >=0.0.8
 
 test:
   imports:
