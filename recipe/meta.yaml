@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.4" %}
-{% set sha256 = "cdeabe79f41fcb61269c53b4977954cc6a6b5a867e0a14487a55b19d29134ca6" %}
+{% set version = "0.2.5" %}
+{% set sha256 = "1fd1d83543e5e26a1e103b48d01ebbd58c3662b0fa75f6477d590e7079925798" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -35,7 +35,7 @@ requirements:
     - pandas >=1.2.1
     - phonopy >=2.8.1
     - pymatgen >=2021.2.16
-    - pyiron_base >=0.1.48
+    - pyiron_base >=0.2.2
     - pyscal >=2.10.9
     - pytables >=3.6.1
     - quickff >=2.2.4
