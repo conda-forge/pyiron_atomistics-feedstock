@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.5" %}
-{% set sha256 = "1fd1d83543e5e26a1e103b48d01ebbd58c3662b0fa75f6477d590e7079925798" %}
+{% set version = "0.2.6" %}
+{% set sha256 = "d65fc4949b0b658de88d56f00ad65be2100d185da8ad229cfa705d6f40962f0e" %}
 
 package:
   name: {{ name|lower }}
@@ -32,11 +32,11 @@ requirements:
     - mendeleev >=0.6.1
     - molmod >=1.4.8
     - numpy >=1.16  # >=1.20.1
-    - pandas >=1.2.1
+    - pandas >=1.2.3
     - phonopy >=2.8.1
-    - pymatgen >=2021.2.16
+    - pymatgen >=2021.3.4
     - pyiron_base >=0.2.2
-    - pyscal >=2.10.9
+    - pyscal >=2.10.12
     - pytables >=3.6.1
     - quickff >=2.2.4
     - scipy >=1.6.0
@@ -46,7 +46,7 @@ requirements:
     - spglib >=1.16.1
     - tamkin >=1.2.6
     - yaff >=1.4.2
-    - pyiron-data >=0.0.10
+    - pyiron-data >=0.0.12
 
 test:
   imports:
