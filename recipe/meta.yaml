@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.7" %}
-{% set sha256 = "d4bb323a4263eb139312c5f4561064193aeddecae90e499e35bef9c145deadd0" %}
+{% set version = "0.2.8" %}
+{% set sha256 = "f1ea8ecbbaad77f5cba6df9252985d5a42e2d9e42947748ccde0235e230d7a2a" %}
 
 package:
   name: {{ name|lower }}
@@ -25,27 +25,24 @@ requirements:
     - python >3.6
     - aimsgb >=0.1.0
     - ase >=3.21.1
-    - defusedxml >=0.6.0
+    - defusedxml >=0.7.1
     - future >=0.18.2
-    - h5py >=2.10.0  # >=3.1.0
+    - h5py >=3.1.0
     - matplotlib-base >=3.3.4
     - mendeleev >=0.6.1
     - molmod >=1.4.8
-    - numpy >=1.16  # >=1.20.1
+    - numpy >=1.20.1
     - pandas >=1.2.3
-    - phonopy >=2.8.1
-    - pymatgen >=2021.3.4
-    - pyiron_base >=0.2.2
+    - phonopy >=2.9.3
+    - pymatgen >=2022.0.4
+    - pyiron_base >=0.2.4
     - pyscal >=2.10.12
     - pytables >=3.6.1
-    - quickff >=2.2.4
-    - scipy >=1.6.0
+    - scipy >=1.6.1
     - seekpath >=2.0.1
     - six >=1.15.0
     - scikit-learn >=0.24.1
     - spglib >=1.16.1
-    - tamkin >=1.2.6
-    - yaff >=1.4.2
     - pyiron-data >=0.0.12
 
 test:
