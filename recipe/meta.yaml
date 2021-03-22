@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.8" %}
-{% set sha256 = "f1ea8ecbbaad77f5cba6df9252985d5a42e2d9e42947748ccde0235e230d7a2a" %}
+{% set version = "0.2.9" %}
+{% set sha256 = "d5d30a415a2d072447be5b274943786210b4b82047a0f3bca6e9054f050260bd" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -29,12 +29,12 @@ requirements:
     - future >=0.18.2
     - h5py >=3.1.0
     - matplotlib-base >=3.3.4
-    - mendeleev >=0.6.1
+    - mendeleev >=0.7.0
     - numpy >=1.20.1
     - pandas >=1.2.3
     - phonopy >=2.9.3
-    - pymatgen >=2022.0.4
-    - pyiron_base >=0.2.4
+    - pymatgen >=2022.0.5
+    - pyiron_base >=0.2.7
     - pyscal >=2.10.12
     - pytables >=3.6.1
     - scipy >=1.6.1
