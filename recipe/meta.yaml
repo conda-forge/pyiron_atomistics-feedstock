@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,17 +27,17 @@ requirements:
     - ase >=3.21.1
     - defusedxml >=0.7.1
     - future >=0.18.2
-    - h5py >=3.1.0
-    - matplotlib-base >=3.3.4
+    - h5py >=3.2.1
+    - matplotlib-base >=3.4.1
     - mendeleev >=0.7.0
-    - numpy >=1.20.1
-    - pandas >=1.2.3
+    - numpy >=1.20.2
+    - pandas >=1.2.4
     - phonopy >=2.9.3
-    - pymatgen >=2022.0.5
-    - pyiron_base >=0.2.7
+    - pymatgen >=2022.0.6
+    - pyiron_base >=0.2.10
     - pyscal >=2.10.12
     - pytables >=3.6.1
-    - scipy >=1.6.1
+    - scipy >=1.6.2
     - seekpath >=2.0.1
     - six >=1.15.0
     - scikit-learn >=0.24.1
