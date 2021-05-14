@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.11" %}
-{% set sha256 = "f2c8c8ae8f83d372be4513240f72048880ed6f88b72a4a5367fe700b452201c8" %}
+{% set version = "0.2.12" %}
+{% set sha256 = "02e84068b63db3811309ae98406658db11fc7577a73c69cfa1ef15c35f57a19f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -33,14 +33,14 @@ requirements:
     - numpy >=1.20.2
     - pandas >=1.2.4
     - phonopy >=2.9.3
-    - pymatgen >=2022.0.6
-    - pyiron_base >=0.2.10
+    - pymatgen >=2022.0.7
+    - pyiron_base >=0.2.11
     - pyscal >=2.10.12
     - pytables >=3.6.1
-    - scipy >=1.6.2
+    - scipy >=1.6.3
     - seekpath >=2.0.1
     - six >=1.15.0
-    - scikit-learn >=0.24.1
+    - scikit-learn >=0.24.2
     - spglib >=1.16.1
     - pyiron-data >=0.0.12
 
