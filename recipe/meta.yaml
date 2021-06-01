@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -34,7 +34,7 @@ requirements:
     - pandas >=1.2.4
     - phonopy >=2.9.3
     - pymatgen >=2022.0.7
-    - pyiron_base >=0.2.11
+    - pyiron_base ==0.2.13
     - pyscal >=2.10.12
     - pytables >=3.6.1
     - scipy >=1.6.3
