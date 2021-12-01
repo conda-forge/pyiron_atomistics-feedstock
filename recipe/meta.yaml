@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.30" %}
-{% set sha256 = "67002048a3f106c7fc782f00384585c7b3fa4ecd75e524954b7ea823f9962d98" %}
+{% set version = "0.2.31" %}
+{% set sha256 = "329be555940d2a0bdf4d6644cdc303c7bf27af2b87a05975d17caff387162289" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -28,16 +28,16 @@ requirements:
     - defusedxml >=0.7.1
     - future >=0.18.2
     - h5py >=2.10.0  # for tensorflow compatibility
-    - matplotlib-base >=3.4.3
+    - matplotlib-base >=3.5.0
     - mendeleev >=0.9.0
     - numpy >=1.20.3  # for numba compatibility
     - pandas >=1.3.4
     - phonopy >=2.12.0
     - pymatgen >=2022.0.16
-    - pyiron_base >=0.4.2
+    - pyiron_base >=0.4.3
     - pyscal >=2.10.15
     - pytables >=3.6.1
-    - scipy >=1.7.2
+    - scipy >=1.7.3
     - seekpath >=2.0.1
     - scikit-learn >=1.0.1
     - spglib >=1.16.2
