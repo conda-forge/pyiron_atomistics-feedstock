@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -33,7 +33,7 @@ requirements:
     - numpy >=1.20.3  # for numba compatibility
     - pandas >=1.3.4
     - phonopy >=2.12.0
-    - pymatgen >=2022.0.16
+    - pymatgen >=2022.0.9  # for python 3.7 compatibility  
     - pyiron_base >=0.4.3
     - pyscal >=2.10.15
     - pytables >=3.6.1
