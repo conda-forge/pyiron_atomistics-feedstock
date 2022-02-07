@@ -10,6 +10,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron-atomistics-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - scipy.patch
 
 build:
   noarch: python
@@ -24,19 +26,19 @@ requirements:
   run:
     - python >3.7
     - aimsgb >=0.1.0
-    - ase >=3.22.0
+    - ase >=3.22.1
     - defusedxml >=0.7.1
     - future >=0.18.2
     - h5py >=2.10.0  # for tensorflow compatibility
     - matplotlib-base >=3.5.1
     - mendeleev >=0.9.0
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=1.3.5
+    - pandas >=1.4.0
     - phonopy >=2.12.0
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.0
+    - pyiron_base >=0.5.3
     - pyscal >=2.10.15
-    - pytables >=3.6.1
+    - pytables >=3.7.0
     - scipy >=1.7.3
     - seekpath >=2.0.1
     - scikit-learn >=1.0.2
