@@ -1,0 +1,25 @@
+From 8d033c83b5454fbdbbe52584bb33461ebb1a93c0 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Mon, 7 Feb 2022 11:49:09 -0700
+Subject: [PATCH] Fix scipy
+
+---
+ pyiron_atomistics/atomistics/structure/analyse.py | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/pyiron_atomistics/atomistics/structure/analyse.py b/pyiron_atomistics/atomistics/structure/analyse.py
+index c9cbe8de3..c21d461e1 100644
+--- a/pyiron_atomistics/atomistics/structure/analyse.py
++++ b/pyiron_atomistics/atomistics/structure/analyse.py
+@@ -20,6 +20,11 @@
+ from scipy.spatial import ConvexHull
+ from typing import Type
+ 
++try:  # scipy <1.8
++    from scipy.spatial.qhull import _QhullUser
++except ImportError:  # scipy >= 1.8
++    from scipy.spatial._qhull import _QhullUser
++
+ deprecate = Deprecator()
+ 
+ __author__ = "Joerg Neugebauer, Sam Waseda"
