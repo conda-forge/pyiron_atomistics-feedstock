@@ -15,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -35,6 +35,7 @@ requirements:
     - numpy >=1.19.5  # for numba and pytorch compatibility
     - pandas >=1.4.0
     - phonopy >=2.12.0
+    - pint >=0.18
     - pymatgen >=2020.12.31  # for pytorch compatibility
     - pyiron_base >=0.5.3
     - pyscal >=2.10.15
