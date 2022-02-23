@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.37" %}
-{% set sha256 = "fdd0ff940e2fbbabf0dbddd13430fc227d071efe3e300e113f9cc2e450ac446d" %}
+{% set version = "0.2.38" %}
+{% set sha256 = "4f61ef45b21e156297134256f8645790ce71af59fcfd782e8ed4e5ed23d42192" %}
 
 package:
   name: {{ name|lower }}
@@ -31,14 +31,14 @@ requirements:
     - matplotlib-base >=3.5.1
     - mendeleev >=0.9.0
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=1.4.0
-    - phonopy >=2.12.0
+    - pandas >=1.4.1
+    - phonopy >=2.13.1
     - pint >=0.18
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.3
+    - pyiron_base >=0.5.6
     - pyscal >=2.10.15
     - pytables >=3.7.0
-    - scipy >=1.7.3
+    - scipy >=1.8.0
     - seekpath >=2.0.1
     - scikit-learn >=1.0.2
     - spglib >=1.16.3
