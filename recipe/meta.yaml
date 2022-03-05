@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -42,7 +42,7 @@ requirements:
     - seekpath >=2.0.1
     - scikit-learn >=1.0.2
     - spglib >=1.16.3
-    - pyiron-data >=0.0.17
+    - pyiron-data >=0.0.18
 
 test:
   imports:
