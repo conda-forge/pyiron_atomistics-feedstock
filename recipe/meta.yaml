@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.39" %}
-{% set sha256 = "503cb48ea9d548236ac66e4db4f887b5fd5dca3f837f2f395808270e6ae87016" %}
+{% set version = "0.2.40" %}
+{% set sha256 = "61bbcf8fec5fc726bb4661c54ac693054bd00441f3e3aef36849989ff90b1b18" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
