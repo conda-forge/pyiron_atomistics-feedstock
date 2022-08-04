@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.51" %}
-{% set sha256 = "db139e616bb461bdc5c6166143b1e508ac3341512e2a806fa4dcae0243c16cc3" %}
+{% set version = "0.2.52" %}
+{% set sha256 = "e736549cf081fcc6b9d6acaab1a36eaaa6ec5c8b28e283e582b89ba720faf5e4" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +10,10 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron-atomistics-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - import.patch
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -30,20 +28,20 @@ requirements:
     - defusedxml >=0.7.1
     - future >=0.18.2
     - h5py >=2.10.0  # for tensorflow compatibility
-    - matplotlib-base >=3.5.1
-    - mendeleev >=0.9.0
+    - matplotlib-base >=3.5.2
+    - mendeleev >=0.10.0
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=1.4.1
-    - phonopy >=2.13.1
-    - pint >=0.18
+    - pandas >=1.4.3
+    - phonopy >=2.15.1
+    - pint >=0.19.2
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.6
+    - pyiron_base >=0.5.20
     - pyscal >=2.10.15
     - pytables >=3.7.0
-    - scipy >=1.8.0
+    - scipy >=1.9.0
     - seekpath >=2.0.1
-    - scikit-learn >=1.0.2
-    - spglib >=1.16.3
+    - scikit-learn >=1.1.1
+    - spglib >=1.16.5
     - pyiron-data >=0.0.18
 
 test:
