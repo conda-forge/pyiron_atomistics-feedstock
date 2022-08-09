@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.52" %}
-{% set sha256 = "e736549cf081fcc6b9d6acaab1a36eaaa6ec5c8b28e283e582b89ba720faf5e4" %}
+{% set version = "0.2.53" %}
+{% set sha256 = "fceabe3d36960b888c41522c7102b7742a01dae8c8794e9c31bc1c481eb43217" %}
 
 package:
   name: {{ name|lower }}
@@ -35,12 +35,12 @@ requirements:
     - phonopy >=2.15.1
     - pint >=0.19.2
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.20
+    - pyiron_base >=0.5.21
     - pyscal >=2.10.15
     - pytables >=3.7.0
     - scipy >=1.9.0
     - seekpath >=2.0.1
-    - scikit-learn >=1.1.1
+    - scikit-learn >=1.1.2
     - spglib >=1.16.5
     - pyiron-data >=0.0.18
 
