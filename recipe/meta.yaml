@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -28,10 +28,11 @@ requirements:
     - defusedxml >=0.7.1
     - future >=0.18.2
     - h5py >=2.10.0  # for tensorflow compatibility
-    - matplotlib-base >=3.5.2
+    - matplotlib-base >=3.6.0
     - mendeleev >=0.10.0
+    - mp-api >=0.27.5
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=1.4.3
+    - pandas >=1.5.0
     - phonopy >=2.15.1
     - pint >=0.19.2
     - pymatgen >=2020.12.31  # for pytorch compatibility
