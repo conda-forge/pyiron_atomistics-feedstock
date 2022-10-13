@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -33,7 +33,7 @@ requirements:
     - mp-api >=0.27.3
     - numpy >=1.19.5  # for numba and pytorch compatibility
     - pandas >=1.5.0
-    - phonopy >=2.15.1
+    - phonopy >=2.15.1,<2.16  # There is a bug with the latest phonopy version https://github.com/pyiron/pyiron_atomistics/pull/803
     - pint >=0.19.2
     - pymatgen >=2020.12.31  # for pytorch compatibility
     - pyiron_base >=0.5.21
