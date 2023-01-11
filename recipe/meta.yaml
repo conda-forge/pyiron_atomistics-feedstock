@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.61" %}
-{% set sha256 = "dc0ecbc4d970e2981614608e58bfc78fb1aa1f1781fdba827c944a7bfc6cbb91" %}
+{% set version = "0.2.62" %}
+{% set sha256 = "ef3e675a68fbddd6bc5b293aa2cdae116c6fc78ae63638160b344328b4073953" %}
 
 package:
   name: {{ name|lower }}
@@ -26,23 +26,21 @@ requirements:
     - aimsgb >=0.1.1
     - ase >=3.22.1
     - defusedxml >=0.7.1
-    - future >=0.18.2
     - h5py >=2.10.0  # for tensorflow compatibility
-    - matplotlib-base >=3.6.1
-    - mendeleev >=0.11.0
-    - mp-api >=0.29.3
+    - matplotlib-base >=3.6.2
+    - mendeleev >=0.12.1
+    - mp-api >=0.30.5
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=1.5.1
-    - phonopy >=2.15.1,<2.16  # There is a bug with the latest phonopy version https://github.com/pyiron/pyiron_atomistics/pull/803
-    - pint >=0.19.2
+    - pandas >=1.5.2
+    - phonopy >=2.17.1
+    - pint >=0.20.1
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.27
+    - pyiron_base >=0.5.31
     - pyscal >=2.10.18
-    - pytables >=3.7.0
-    - scipy >=1.9.3
+    - scipy >=1.10.0
     - seekpath >=2.0.1
-    - scikit-learn >=1.1.2
-    - spglib >=2.0.1
+    - scikit-learn >=1.2.0
+    - spglib >=2.0.2
     - pyiron-data >=0.0.18
 
 test:
