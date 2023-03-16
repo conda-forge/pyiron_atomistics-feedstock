@@ -1,11 +1,11 @@
-About pyiron_atomistics
-=======================
+About pyiron_atomistics-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_atomistics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyiron/pyiron_atomistics
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyiron_atomistics-feedstock/blob/main/LICENSE.txt)
 
 Summary: Atomistics plugin for pyiron - an integrated development environment (IDE) for computational materials science.
 
