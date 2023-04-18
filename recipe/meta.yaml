@@ -23,21 +23,20 @@ requirements:
 
   run:
     - python >3.7
-    - aimsgb >=0.1.1
     - ase >=3.22.1
     - defusedxml >=0.7.1
     - h5py >=2.10.0  # for tensorflow compatibility
     - matplotlib-base >=3.7.1
-    - mendeleev >=0.12.1
-    - mp-api >=0.30.11
+    - mendeleev >=0.13.0
+    - mp-api >=0.31.1
     - numpy >=1.19.5  # for numba and pytorch compatibility
     - pandas >=2.0.0
     - phonopy >=2.18.0
     - pint >=0.20.1
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.35
+    - pyiron_base >=0.5.36
     - pyscal >=2.10.18
-    - scipy >=1.10.0
+    - scipy >=1.10.1
     - seekpath >=2.0.1
     - scikit-learn >=1.2.2
     - spglib >=2.0.2
