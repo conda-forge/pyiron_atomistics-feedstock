@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.2.67" %}
-{% set sha256 = "1b645df762ac97e0b2415b9c26a0aa4c92c172350b86ad09bf9b4ccbfa24963e" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "563e6d04ee0806fe9ef3002421f10d908652e2e2c1886f87ca4b557619a39e64" %}
 
 package:
   name: {{ name|lower }}
@@ -18,26 +18,26 @@ build:
 
 requirements:
   host:
-    - python >3.7
+    - python >3.8
     - pip
 
   run:
-    - python >3.7
+    - python >3.8
     - ase >=3.22.1
     - defusedxml >=0.7.1
     - h5py >=2.10.0  # for tensorflow compatibility
     - matplotlib-base >=3.7.1
-    - mendeleev >=0.13.0
-    - mp-api >=0.31.1
+    - mendeleev >=0.13.1
+    - mp-api >=0.33.3
     - numpy >=1.19.5  # for numba and pytorch compatibility
-    - pandas >=2.0.0
-    - phonopy >=2.19.0
-    - pint >=0.21
+    - pandas >=2.0.2
+    - phonopy >=2.19.1
+    - pint >=0.22
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.38
+    - pyiron_base >=0.5.42
     - pyscal >=2.10.18
     - scipy >=1.10.1
-    - seekpath >=2.0.1
+    - seekpath >=2.1.0
     - scikit-learn >=1.2.2
     - spglib >=2.0.2
     - structuretoolkit =0.0.3
