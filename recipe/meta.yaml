@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >3.8
+    - python >=3.8
     - pip
 
   run:
-    - python >3.8
+    - python >=3.8
     - ase >=3.22.1
     - defusedxml >=0.7.1
     - h5py >=2.10.0  # for tensorflow compatibility
