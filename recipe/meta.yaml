@@ -13,16 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >3.8
+    - python >=3.8
     - pip
 
   run:
-    - python >3.8
+    - python >=3.8
     - ase >=3.22.1
     - defusedxml >=0.7.1
     - h5py >=2.10.0  # for tensorflow compatibility
@@ -32,9 +32,9 @@ requirements:
     - numpy >=1.19.5  # for numba and pytorch compatibility
     - pandas >=2.0.2
     - phonopy >=2.19.1
-    - pint >=0.22
+    - pint >=0.21  # for backwards compatibility to python 3.8
     - pymatgen >=2020.12.31  # for pytorch compatibility
-    - pyiron_base >=0.5.42
+    - pyiron_base >=0.6.1
     - pyscal >=2.10.18
     - scipy >=1.10.1
     - seekpath >=2.1.0
