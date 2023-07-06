@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
 {% set version = "0.3.0.dev.0" %}
-{% set sha256 = "90e7ae858aadc3e4bdccf2b95e6613bfab3c9de349306a7146bc531b2eedc029" %}
+{% set sha256 = "305919eb7efe619caedef7f998f63c2b1782af81c0977465cfd596d94aca4007" %}
 
 package:
   name: {{ name|lower }}
