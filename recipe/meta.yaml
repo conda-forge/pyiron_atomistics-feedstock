@@ -1,6 +1,6 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "563e6d04ee0806fe9ef3002421f10d908652e2e2c1886f87ca4b557619a39e64" %}
+{% set version = "0.3.0.dev0" %}
+{% set sha256 = "305919eb7efe619caedef7f998f63c2b1782af81c0977465cfd596d94aca4007" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -40,7 +40,7 @@ requirements:
     - seekpath >=2.1.0
     - scikit-learn >=1.2.2
     - spglib >=2.0.2
-    - structuretoolkit =0.0.3
+    - structuretoolkit >=0.0.3
     - pyiron-data >=0.0.22
 
 test:
