@@ -10,6 +10,8 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron-atomistics-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - versioneer.patch
 
 build:
   noarch: python
