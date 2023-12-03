@@ -18,6 +18,27 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - pylammpsmpi
+    - ase 
+    - atomistics
+    - defusedxml
+    - h5py
+    - matplotlib-base
+    - mendeleev
+    - mp-api
+    - numpy
+    - pandas
+    - phonopy
+    - pint
+    - pyiron_base
+    - scipy
+    - seekpath
+    - scikit-learn
+    - spglib
+    - structuretoolkit
+    - python-blosc2  # for pytables
+    - versioneer
+    - toml
   run:
     - pylammpsmpi >=0.2.7,<=0.2.9
     - python >=3.8
@@ -28,7 +49,7 @@ requirements:
     - matplotlib-base >=3.5.3,<=3.8.2
     - mendeleev >=0.12.0,<=0.14.0
     - mp-api >=0.37.0,<=0.39.0
-    - numpy >=1.26.0,<=1.26.2 # for numba and pytorch compatibility
+    - numpy >=1.26.0,<=1.26.2
     - pandas >=2.0.3,<=2.1.3
     - phonopy ==2.20.0
     - pint >=0.18,<=0.22
