@@ -68,7 +68,6 @@ test:
     - pyiron_atomistics
   commands:
     - pip check
-    - pip list | grep pyiron-atomistics
   requires:
     - pip
 
