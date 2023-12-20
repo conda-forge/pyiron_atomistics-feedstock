@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.3.12" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80d5dfe2f3f7e9e31a1e163fb1ef7a3dc833015c7f743f43865ad4f897587564
+  sha256: de608626243de58bed5d764445f7fd6b46a0a7c14e3806c735f0abb82d46cad5
 
 build:
   noarch: python
@@ -42,7 +42,7 @@ requirements:
     - pylammpsmpi >=0.2.7,<=0.2.10
     - python >=3.8
     - ase ==3.22.1
-    - atomistics >=0.1.12,<=0.1.16
+    - atomistics >=0.1.12,<=0.1.18
     - defusedxml >=0.7.0,<=0.7.1
     - h5py >=3.9.0,<=3.10.0
     - matplotlib-base >=3.5.3,<=3.8.2
