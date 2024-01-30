@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.4.8" %}
+{% set version = "0.4.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a53b903db0b7a4a4e67e55e7c7b2461c31abe437f5b63ef80788f5013f6fbcf3
+  sha256: 6062a5dd782762292e9da559e26ebb2fe48202eb4c498a47720bfa6ebc7d9617
 
 build:
   noarch: python
@@ -41,7 +41,7 @@ requirements:
   run:
     - python >=3.8
     - ase ==3.22.1
-    - atomistics >=0.1.12,<=0.1.21
+    - atomistics >=0.1.12,<=0.1.22
     - defusedxml >=0.7.0,<=0.7.1
     - h5py >=3.9.0,<=3.10.0
     - matplotlib-base >=3.5.3,<=3.8.2
@@ -56,7 +56,7 @@ requirements:
     - scipy >=1.11.1,<=1.12.0
     - scikit-learn >=1.2.1,<=1.4.0
     - seekpath >=1.9.5,<=2.1.0
-    - spglib >=2.0.2,<=2.2.0
+    - spglib >=2.0.2,<=2.3.0
     - structuretoolkit >=0.0.15,<=0.0.18
 
 test:
