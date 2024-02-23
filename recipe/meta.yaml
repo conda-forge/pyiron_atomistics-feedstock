@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.4.16" %}
+{% set version = "0.4.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ffbc214077e935fde7f04f197b90427ff6f38e145ed763f0b7ccabe4660b31d1
+  sha256: cc4ec3c59cf4c9537de63d332f39ce4afbc850346a1875c372d1cbe4f8914596
 
 build:
   noarch: python
