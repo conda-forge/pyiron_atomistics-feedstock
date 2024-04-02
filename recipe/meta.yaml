@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.4.17" %}
+{% set version = "0.4.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc4ec3c59cf4c9537de63d332f39ce4afbc850346a1875c372d1cbe4f8914596
+  sha256: e2e86c21003f9b57c9605c13c8d7e44c4e21eadb9e1fefaa6136e065b76a0fb1
 
 build:
   noarch: python
@@ -41,18 +41,18 @@ requirements:
   run:
     - python >=3.8
     - ase ==3.22.1
-    - atomistics >=0.1.12,<=0.1.23
+    - atomistics >=0.1.12,<=0.1.24
     - defusedxml >=0.7.0,<=0.7.1
     - h5py >=3.9.0,<=3.10.0
     - matplotlib-base >=3.5.3,<=3.8.3
     - mendeleev >=0.12.0,<=0.15.0
-    - mp-api >=0.37.0,<=0.39.5
+    - mp-api >=0.37.0,<=0.41.2
     - numpy >=1.26.0,<=1.26.4
-    - pandas >=2.0.3,<=2.2.0
-    - phonopy >=2.20.0,<=2.21.2
+    - pandas >=2.0.3,<=2.2.1
+    - phonopy >=2.20.0,<=2.22.1
     - pint >=0.18,<=0.23
-    - pyiron_base >=0.7.7,<=0.7.9
-    - pylammpsmpi >=0.2.7,<=0.2.13
+    - pyiron_base >=0.7.7,<=0.7.12
+    - pylammpsmpi >=0.2.7,<=0.2.15
     - scipy >=1.11.1,<=1.12.0
     - scikit-learn >=1.2.1,<=1.4.1.post1
     - seekpath >=1.9.5,<=2.1.0
