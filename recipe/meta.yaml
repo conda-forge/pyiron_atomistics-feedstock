@@ -12,11 +12,11 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9,<3.13
     - pip
     - pylammpsmpi
     - ase
@@ -39,7 +39,7 @@ requirements:
     - versioneer
     - toml
   run:
-    - python >=3.8
+    - python >=3.9,<3.13
     - ase ==3.22.1
     - atomistics >=0.1.12,<=0.1.26
     - defusedxml >=0.7.0,<=0.7.1
