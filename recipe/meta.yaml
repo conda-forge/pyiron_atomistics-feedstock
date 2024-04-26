@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5df7644aeadcde84b8514b078feb4de62d074ab80162dc8f74d153fe2e4dfd83
+  sha256: ccab1192c9c2ea8b7f946219d09e7a22900c1c134215d387eb6bb26b97062b56
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -41,7 +41,7 @@ requirements:
   run:
     - python >=3.9,<3.13
     - ase ==3.22.1
-    - atomistics >=0.1.12,<=0.1.26
+    - atomistics ==0.1.27
     - defusedxml >=0.7.0,<=0.7.1
     - h5py >=3.9.0,<=3.11.0
     - matplotlib-base >=3.5.3,<=3.8.4
@@ -52,7 +52,7 @@ requirements:
     - phonopy >=2.20.0,<=2.22.1
     - pint >=0.18,<=0.23
     - pyiron_base >=0.7.7,<=0.8.2
-    - pylammpsmpi >=0.2.7,<=0.2.15
+    - pylammpsmpi >=0.2.7,<=0.2.18
     - scipy >=1.11.1,<=1.13.0
     - scikit-learn >=1.2.1,<=1.4.2
     - seekpath >=1.9.5,<=2.1.0
