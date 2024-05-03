@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ccab1192c9c2ea8b7f946219d09e7a22900c1c134215d387eb6bb26b97062b56
+  sha256: c6aabf5db1b0da91a07edb1446f6358f3c17923dc2e398e3e1ce5929338985ce
 
 build:
   noarch: python
@@ -51,7 +51,7 @@ requirements:
     - pandas >=2.0.3,<=2.2.2
     - phonopy >=2.20.0,<=2.22.1
     - pint >=0.18,<=0.23
-    - pyiron_base >=0.7.7,<=0.8.2
+    - pyiron_base >=0.7.7,<=0.8.3
     - pylammpsmpi >=0.2.7,<=0.2.18
     - scipy >=1.11.1,<=1.13.0
     - scikit-learn >=1.2.1,<=1.4.2
