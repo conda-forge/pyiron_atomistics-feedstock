@@ -8,11 +8,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c6aabf5db1b0da91a07edb1446f6358f3c17923dc2e398e3e1ce5929338985ce
+  patches:
+    - elastic.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
