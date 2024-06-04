@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cd5344ebf9780694ef972f5d821200a4c36993d74d9f12e6d108905b6bc2fb0d
-  patches:
-    - elastic.patch
 
 build:
   noarch: python
@@ -33,6 +31,7 @@ requirements:
     - phonopy
     - pint
     - pyiron_base
+    - pyiron_snippets
     - scipy
     - seekpath
     - scikit-learn
