@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2ae56c3f35147304e33a420e1356989c38c257e9d034f4dd699e4b9031549bf
+  sha256: affd88c44ad2d2bab928a6cbc197af355f28524c372e45af27673964ea315b10
 
 build:
   noarch: python
@@ -40,10 +40,10 @@ requirements:
     - versioneer
     - toml
   run:
-    - pyscal3 ==3.2.5
+    - pyscal3 >=3.2.5,<=3.2.6
     - python >=3.9,<3.13
     - ase >=3.22.1,<=3.23.0
-    - atomistics >=0.1.27,<=0.1.30
+    - atomistics >=0.1.27,<=0.1.31
     - defusedxml >=0.7.0,<=0.7.1
     - h5py >=3.9.0,<=3.11.0
     - matplotlib-base >=3.5.3,<=3.9.1
@@ -51,15 +51,15 @@ requirements:
     - mp-api >=0.37.0,<=0.41.2
     - numpy >=1.26.0,<=1.26.4
     - pandas >=2.0.3,<=2.2.2
-    - phonopy >=2.20.0,<=2.26.3
-    - pint >=0.18,<=0.24.1
-    - pyiron_base >=0.9.4,<=0.9.6
+    - phonopy >=2.20.0,<=2.26.5
+    - pint >=0.18,<=0.24.3
+    - pyiron_base >=0.9.4,<=0.9.7
     - pyiron_snippets >=0.1.1,<=0.1.2
     - pylammpsmpi >=0.2.18,<=0.2.20
     - scipy >=1.11.1,<=1.14.0
     - scikit-learn >=1.2.1,<=1.5.1
     - seekpath >=1.9.5,<=2.1.0
-    - spglib >=2.0.2,<=2.4.0
+    - spglib >=2.0.2,<=2.5.0
     - structuretoolkit ==0.0.27
 
 test:
