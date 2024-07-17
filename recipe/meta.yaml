@@ -1,5 +1,5 @@
 {% set name = "pyiron_atomistics" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: affd88c44ad2d2bab928a6cbc197af355f28524c372e45af27673964ea315b10
+  sha256: da9f5e29c45c14d257661eadd968c93185beece84c1930a78c1af39c5b1959c4
 
 build:
   noarch: python
@@ -18,7 +18,6 @@ requirements:
   host:
     - python >=3.9,<3.13
     - pip
-    - pylammpsmpi
     - ase
     - atomistics
     - defusedxml
@@ -32,15 +31,16 @@ requirements:
     - pint
     - pyiron_base
     - pyiron_snippets
+    - pylammpsmpi
+    - pyscal3
     - scipy
-    - seekpath
     - scikit-learn
+    - seekpath
     - spglib
     - structuretoolkit
     - versioneer
     - toml
   run:
-    - pyscal3 >=3.2.5,<=3.2.6
     - python >=3.9,<3.13
     - ase >=3.22.1,<=3.23.0
     - atomistics >=0.1.27,<=0.1.31
@@ -55,7 +55,8 @@ requirements:
     - pint >=0.18,<=0.24.3
     - pyiron_base >=0.9.4,<=0.9.7
     - pyiron_snippets >=0.1.1,<=0.1.2
-    - pylammpsmpi >=0.2.18,<=0.2.20
+    - pylammpsmpi >=0.2.18,<=0.2.21
+    - pyscal3 >=3.2.5,<=3.2.6
     - scipy >=1.11.1,<=1.14.0
     - scikit-learn >=1.2.1,<=1.5.1
     - seekpath >=1.9.5,<=2.1.0
