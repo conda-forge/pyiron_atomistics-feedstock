@@ -79,6 +79,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - niklassiemer
     - srmnitc
     - pyiron-runner
     - jan-janssen
