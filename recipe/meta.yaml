@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=3.9,<3.13
+    - setuptools
     - pip
     - ase
     - atomistics
