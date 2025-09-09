@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_atomistics
-  version: "0.7.16"
+  version: "0.7.17"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 10daee2dac23f12b780b1c58373298c41cd28c0fbc148273185b971470c4bd65
+  sha256: a55210e573452f2b2bf907c619771167e6e5314d3ee18530ac2adb0db6ff4556
 
 build:
   number: 0
@@ -58,9 +58,9 @@ requirements:
     - mp-api >=0.37.0,<=0.45.8
     - numpy ==1.26.4
     - pandas >=2.0.3,<=2.3.2
-    - phonopy >=2.20.0,<=2.43.1
+    - phonopy >=2.20.0,<=2.43.2
     - pint >=0.18,<=0.24.4
-    - pyiron_base >=0.13.0,<=0.14.1
+    - pyiron_base >=0.13.0,<=0.14.2
     - pyiron_lammps >=0.3.2,<=0.4.6
     - pyiron_snippets >=0.1.3,<=0.2.0
     - pyiron_vasp >=0.2.2,<=0.2.12
@@ -71,7 +71,7 @@ requirements:
     - seekpath >=1.9.5,<=2.1.0
     - spglib >=2.0.2,<=2.6.0
     - structuretoolkit >=0.0.29,<=0.0.34
-    - sphinx_parser >=0.0.2,<=0.0.3
+    - sphinx_parser >=0.0.2,<=0.1.0
 
 tests:
   - python:
