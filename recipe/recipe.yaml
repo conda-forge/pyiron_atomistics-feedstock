@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_atomistics
-  version: "0.7.18"
+  version: "0.7.19"
   python_min: 3.11
 
 package:
@@ -11,12 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 5d16a3e39abf4bff6be366c8c135a65323bfc648ed9d2cd98a8fe1d497f185fd
-  patches:
-    - mpi4py.patch
+  sha256: 0dd804905e1151b63cba3cfbd19c4f4ed243a86a97fb036b20ace53516243a43
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -62,7 +60,7 @@ requirements:
     - pandas >=2.0.3,<=2.3.2
     - phonopy >=2.20.0,<=2.43.2
     - pint >=0.18,<=0.24.4
-    - pyiron_base >=0.13.0,<=0.14.3
+    - pyiron_base >=0.13.0,<=0.15.0
     - pyiron_lammps >=0.3.2,<=0.4.6
     - pyiron_snippets >=0.1.3,<=0.2.0
     - pyiron_vasp >=0.2.2,<=0.2.12
