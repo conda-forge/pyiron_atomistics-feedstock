@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_atomistics
-  version: "0.7.19"
+  version: "0.7.20"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 0dd804905e1151b63cba3cfbd19c4f4ed243a86a97fb036b20ace53516243a43
+  sha256: 90bbefb8e1fbceccf76332c52aa9fc1c369e3876fe2848859d3e679e98d9041e
 
 build:
   number: 0
