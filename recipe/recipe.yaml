@@ -12,9 +12,11 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 16561c55a07a0ec9d9579f6aeab94abccdd62ab4565240100b179740024011e8
+  patches:
+    - lammps_compute_modify.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
