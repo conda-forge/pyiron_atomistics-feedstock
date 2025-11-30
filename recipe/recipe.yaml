@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_atomistics
-  version: "0.8.4"
+  version: "0.8.5"
   python_min: 3.11
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 16561c55a07a0ec9d9579f6aeab94abccdd62ab4565240100b179740024011e8
+  sha256: f136b8cc9551405ebd1dc717cd2f7fcf75944e7ab9324e57889341b64e94e976
   patches:
     - lammps_compute_modify.patch
 
