@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: pyiron_atomistics
   version: "0.8.7"
-  python_min: 3.11
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
